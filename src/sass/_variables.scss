@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
 /* Colors */
 $paragraph-color: #000000;
@@ -21,6 +22,6 @@ $paragraph-font-size: 16px;
 $brand-font: "Open Sans", Helvetica, Arial;
 $paragraph-font: "Open Sans", Helvetica, Arial;
 
-/*     font-family: 'Lato', sans-serif;
-
-    font-family: 'Open Sans', sans-serif; */
+$text-font: 'Lato', sans-serif;
+$header-font: 'Open Sans', sans-serif;
+$logo-font: 'Dancing Script', cursive;
