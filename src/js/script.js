@@ -1,9 +1,8 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-unused-vars */
 
-
 {
-
+  /* Sidemenu */
   function toggleMenu() {
     const navButton = document.querySelector('.burger');
     const sidenav = document.querySelector('.menu');
@@ -15,6 +14,38 @@
     });
   }
 
+  /* Active pages */
+  const navLinks = document.querySelectorAll('.nav-list .nav-link');
+  const pages =document.querySelectorAll('.page');
+
+  const titleClickHandler = function(event){
+    event.preventDefault();
+    const clickedPage = this;
+    console.log('link was clicked');
+    console.log(event);
+
+    const activeLinks = document.querySelectorAll('.nav-list a.active');
+
+    for(let activeLink of activeLinks){
+      activeLink.classList.remove('active');
+    }
+    clickedPage.classList.add('active');
+
+    const activePages = document.querySelectorAll('.active');
+    for(let activePage of activePages){
+      activePage.classList.remove('active');
+    }
+
+    const pageSelector = clickedPage.getAttribute('href');
+    const targetPage = document.querySelector(pageSelector);
+    targetPage.classList.add('active');
+  };
+  const links = document.querySelectorAll('.nav-list a');
+  for(let link of links){
+    link.addEventListener('click', titleClickHandler);
+  }
+
+  /* Chart */
   function initChart(){
     const ctx = document.getElementById('myChart').getContext('2d');
 
