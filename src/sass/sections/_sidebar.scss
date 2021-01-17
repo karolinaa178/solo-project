@@ -179,17 +179,19 @@ aside {
   }
 
   .nav-active {
-    transform: translateX(142px);
-    display: block;
-    background-color: $background-menu;
-    background: $background-menu;
+    aside{
+      transform: translateX(0%);
+      display: block;
+      background-color: $background-menu;
+      background: $background-menu;
 
-    .contact {
-      opacity: 1;
-    }
+      .contact {
+        opacity: 1;
+      }
 
-    .sidebar-links li {
-      opacity: 1;
+      .sidebar-links li {
+        opacity: 1;
+      }
     }
   }
 
