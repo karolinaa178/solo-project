@@ -5,9 +5,9 @@
   height: 100%;
   z-index: 1;
 
-    &.active{
-      display: block;
-    }
+  &.active{
+    display: block;
+  }
 
   .container {
     display: flex;
@@ -19,6 +19,10 @@
     box-shadow: 0 0 10px $background-color2;
     border-radius: 5px;
     flex-direction: column;
+  }
+
+  .max-width{
+    max-width: 800px;
   }
 }
 

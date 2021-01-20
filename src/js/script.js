@@ -2,6 +2,10 @@
 /* eslint-disable no-unused-vars */
 
 {
+  /* Modals */
+  const closeModal = function(){
+    document.getElementById('overlay').classList.remove('show');
+  };
   /* Sidemenu */
   function toggleMenu() {
     const navButton = document.querySelector('.burger');
