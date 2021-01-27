@@ -7,10 +7,10 @@
 
   h3 {
     margin-left: 15px;
-    font-family: $text-font;
+    font-family: $header-font;
+    font-weight: 700;
     font-size: 15px;
     text-transform: uppercase;
-    font-weight: 400;
-    color: $text-color-menu;
+    color: $text-color;
   }
 }
